@@ -1,0 +1,80 @@
+/* by Noa_chid
+www.noachidxmb.xyz */
+
+@keyframes loadnotif2 {
+    0% {
+        transform: translate(0) scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0) scale(1.2);
+        opacity: 1;
+    }
+}
+
+@keyframes l2oadnotif2 {
+    0% {
+        transform: translate(0) scale(0.9);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0) scale(0.9);
+        opacity: 1;
+    }
+}
+
+body {
+    overflow: hidden;
+    background: white;
+    height: 100vh;
+}
+
+.div-pub {
+    width: 245px;
+    height: 60px;
+    background: rgb(84, 82, 82);
+    border: 1px solid rgb(113, 113, 113);
+    position: fixed;
+    z-index: 99 !important;
+    top: 60px;
+    right: 70px;
+    border-radius: 5px;
+    transform: scale(1.2);
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+    animation: loadnotif2 0.5s;
+    opacity: 1;
+    display: none;
+}
+
+.img-pub {
+    height: auto;
+    width: 45px;
+    position: relative;
+    top: 7.5px;
+    left: 10px;
+}
+
+.a-notif {
+    font-size: 13px;
+    color: rgb(206, 206, 206);
+    margin-left: 10px;
+    position: absolute;
+    top: 15px;
+    left: 55px;
+    text-shadow: none;
+    user-select: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media screen and (max-width:450px) {
+    .div-pub {
+        transform: scale(0.9);
+        right: 15px;
+        animation: l2oadnotif2 0.5s;
+    }
+}
